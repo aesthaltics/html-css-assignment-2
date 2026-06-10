@@ -1,0 +1,106 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+  --very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons)*/
+  --container-border-radius: 8px;
+}
+
+body {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.large-text {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--very-light-gray);
+  font-size: 44px;
+}
+
+.small-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  border-radius: 20px;
+
+  height: 500px;
+  width: 1000px;
+}
+
+.car-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: var(--transparent-white);
+
+  height: 100%;
+  width: calc(100% / 3);
+}
+
+.car-card img {
+  height: auto;
+  width: 80px;
+}
+
+.car-card button {
+  display: inline;
+  border: 0px;
+  background-image: var(--very-light-gray);
+  margin-top: auto;
+  padding: 10px 25px;
+  width: fit-content;
+  border-radius: 1000px;
+  color: transparent;
+  background-clip: border-box;
+}
+
+.orange-bg {
+  background-color: var(--bright-orange);
+}
+
+.orange-bg button {
+  color: var(--bright-orange);
+}
+
+.cyan-bg {
+  background-color: var(--dark-cyan);
+}
+
+.cyan-bg button {
+  color: var(--dark-cyan);
+}
+
+.dark-cyan-bg {
+  background-color: var(--very-dark-cyan);
+}
+
+.dark-cyan-bg button {
+  color: var(--very-dark-cyan);
+}
+
+.left-card {
+  border-top-left-radius: var(--container-border-radius);
+  border-bottom-left-radius: var(--container-border-radius);
+}
+
+.right-card {
+  border-top-right-radius: var(--container-border-radius);
+  border-bottom-right-radius: var(--container-border-radius);
+}
